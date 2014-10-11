@@ -5,4 +5,6 @@
     <string name="collection_switch">Perception service</string>
     <string name="action_settings">Settings</string>
 
+    <string name="ga_tracking_id_key">ga_tracking_id</string>
+
 </resources>
