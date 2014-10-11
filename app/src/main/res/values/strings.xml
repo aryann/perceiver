@@ -2,8 +2,7 @@
 <resources>
 
     <string name="app_name">Perceiver</string>
-    <string name="collection_on">Sound Sampling Enabled</string>
-    <string name="collection_off">Sound Sampling Disabled</string>
+    <string name="collection_switch">Perception service</string>
     <string name="action_settings">Settings</string>
 
 </resources>

@@ -8,12 +8,11 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
-    <ToggleButton
+    <Switch
         android:id="@+id/toggle_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onToggleClicked"
-        android:textOff="@string/collection_off"
-        android:textOn="@string/collection_on" />
+        android:text="@string/collection_switch" />
 
 </RelativeLayout>

@@ -20,6 +20,7 @@ public class PerceptionService extends Service {
 
     @Override
     public void onCreate() {
+
         timer = new Timer();
 
         mediaRecorder = new MediaRecorder();
