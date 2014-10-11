@@ -1,9 +1,12 @@
 package com.aryannayra.perceiver;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ToggleButton;
 
 
 public class MainActivity extends Activity {
@@ -13,7 +16,6 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -32,5 +34,15 @@ public class MainActivity extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onToggleClicked(View view) {
+        boolean on = ((ToggleButton) view).isChecked();
+        Intent intent = new Intent(this, PerceptionService.class);
+        if (on) {
+            startService(intent);
+        } else {
+            stopService(intent);
+        }
     }
 }

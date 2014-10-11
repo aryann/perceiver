@@ -2,7 +2,8 @@
 <resources>
 
     <string name="app_name">Perceiver</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="collection_on">Sound Sampling Enabled</string>
+    <string name="collection_off">Sound Sampling Disabled</string>
     <string name="action_settings">Settings</string>
 
 </resources>
