@@ -48,6 +48,10 @@ public class PerceptionService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
+        if (intent == null) {
+            return START_STICKY;
+        }
+
         Log.i(LOG_TAG, "Service started.");
 
         String trackingId = intent.getStringExtra(getString(R.string.ga_tracking_id_key));
