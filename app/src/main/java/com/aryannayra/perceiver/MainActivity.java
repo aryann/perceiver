@@ -47,6 +47,9 @@ public class MainActivity extends Activity {
                 startService(intent);
             }
         }
+        trackingIdEditText.clearFocus();
+        trackingIdEditText.setHint(newTrackingId);
+        trackingIdEditText.getText().clear();
     }
 
     public void onToggleClicked(View view) {

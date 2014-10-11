@@ -88,7 +88,6 @@ public class PerceptionService extends Service {
         return START_STICKY;
     }
 
-
     @Override
     public IBinder onBind(Intent intent) {
         return null;
